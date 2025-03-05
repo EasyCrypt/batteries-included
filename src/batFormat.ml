@@ -59,6 +59,7 @@ let formatter_of_output out =
 ##V>=5##   out_flush = flush;
 ##V>=5##   out_newline = newline_of out;
 ##V>=5##   out_spaces = spaces_of out;
+##V>=5##   out_width = utf_8_scalar_width;
 ##V>=5##   out_indent = spaces_of out };
   f
 
@@ -74,6 +75,7 @@ let set_formatter_output out =
 ##V>=5##    out_flush = flush_of out;
 ##V>=5##    out_newline = newline_of out;
 ##V>=5##    out_spaces = spaces_of out;
+##V>=5##    out_width = utf_8_scalar_width;
 ##V>=5##    out_indent = spaces_of out }
 
 let pp_set_formatter_output f out =
@@ -88,6 +90,7 @@ let pp_set_formatter_output f out =
 ##V>=5##    out_flush = flush_of out;
 ##V>=5##    out_newline = newline_of out;
 ##V>=5##    out_spaces = spaces_of out;
+##V>=5##    out_width = utf_8_scalar_width;
 ##V>=5##    out_indent = spaces_of out }
 
 (**{6 Old values, new semantics}*)
